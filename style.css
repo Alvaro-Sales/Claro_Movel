@@ -59,7 +59,7 @@ nav {
     display: flex;
 }
 
-#menu .nav-list {
+.nav-list {
     list-style: none;
     display: flex;
     align-items: center;
@@ -67,12 +67,12 @@ nav {
     padding: 0;
 }
 
-#menu .nav-list li {
+.nav-list li {
     letter-spacing: 3px;
     margin-left: 10px;
 }
 
-#menu .nav-list li a {
+.nav-list li a {
     font-weight: normal;
     padding: 8px;
     font-weight: 600;
@@ -82,7 +82,7 @@ nav {
     scroll-behavior: smooth;
 }
 
-#menu .nav-list li a:hover {
+.nav-list li a:hover {
     color: var(--cor-7);
 }
 
@@ -127,6 +127,11 @@ main {
     padding: 20px;
     border-radius: 20px;
     margin: 20px;
+}
+
+.card-1 {
+    width: 430px;
+    height: 683px;
 }
 
 #titleCard {
@@ -178,6 +183,23 @@ main {
 .importante {
     color: var(--cor-7);
 }
+
+.ilustra {
+    max-width: 100%;
+    height: auto;
+}
+
+.ilustra div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ilustra div img {
+    width: 500px;
+    height: auto;
+}
+
 
 
 @media screen and (max-width: 930px) {
@@ -267,13 +289,13 @@ main {
         align-items: center;
         justify-content: space-around;
         box-sizing: border-box;
-        padding: 80px 0 150px 0;
+        padding: 80px 0 50% 0;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
     }
   
     .nav-list li {
-        max-height: 70%;
+        max-height: 50%;
         margin-left: 0;
         opacity: 0;
     }
