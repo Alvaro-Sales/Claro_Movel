@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Merienda:wght@400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cor-1: #ffffff;
+    --cor-2: #0080ff;
+    --cor-3: #222222;
+    --cor-4: #00df5d;
+    --cor-5: #000000;
+    --cor-6: #17d365;
+    --cor-7: #EF3829;
+}
+
+html {
+    max-height: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+	background-color: var(--cor-3);
+}
+
+header {
+    width: 100%;
+	z-index: 99;
+	position: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-1);
+    box-sizing: border-box;
+    padding: 0 80px;
+    height: 6vh;
+    min-height: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    color: var(--cor-5);
+    font-weight: normal;
+    font-family: 'Marck Script', cursive;
+    cursor: default;
+}
+
+#menu {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 10px;
+}
+
+.nav-list li a {
+    font-weight: normal;
+    padding: 8px;
+    font-weight: 600;
+    color: var(--cor-5);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.nav-list li a:hover {
+    color: var(--cor-7);
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: var(--cor-1);
+    margin: 8px;
+    transition: all .3s ease;
+}
+
+main {
+    padding-top: 8vh;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+}
+
+.containerCards {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 430px;
+    height: auto;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ebebeb;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.card-1 {
+    width: 430px;
+    height: 683px;
+}
+
+#titleCard {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--cor-7);
+    font-size: 30px;
+}
+
+.appIlimi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.appIlimi .imgWhatsapp {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.extraPlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.extraPlay2 {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.iconExtra {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.importante {
+    color: var(--cor-7);
+}
+
+.ilustra {
+    max-width: 100%;
+    height: auto;
+}
+
+.ilustra div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ilustra div img {
+    width: 500px;
+    height: auto;
+}
+
+.float {
+    z-index: 10;
+    bottom: 20px;
+    right: 40px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.float img {
+    width: 90px;
+    height: 90px;
+}
+
+
+@media screen and (max-width: 930px) {
+    body {
+        overflow-x: hidden;
+        padding: 0;
+        margin: 0;
+    }
+  
+    header {
+        width: 100%;
+        z-index: 99;
+        position: fixed;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 30px;
+        height: 6vh;
+        min-height: 50px;
+    }
+    
+    nav a {
+        color: var(--cor-5);
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    
+    nav a:hover {
+        color: var(--cor-2);
+    }
+    
+    .nav-list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-list li {
+        letter-spacing: 2px;
+        margin-left: 10px;
+    }
+    
+    .mobile-menu {
+        display: none;
+        cursor: pointer;
+    }
+    
+    .mobile-menu div {
+        width: 32px;
+        height: 2px;
+        background-color: var(--cor-5);
+        margin: 8px;
+        transition: all 0.3s ease;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--cor-1);
+        box-sizing: border-box;
+        padding: 0 50px;
+        height: 6vh;
+        min-height: 50px;
+        font-family: 'Poppins', sans-serif;
+    }
+  
+    .nav-list {
+        position: absolute;
+        top: 6vh;
+        right: 0;
+        width: 70%;
+        height: 94vh;
+        background-color: var(--cor-1);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding: 80px 0 50% 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+  
+    .nav-list li {
+        max-height: 50%;
+        margin-left: 0;
+        opacity: 0;
+    }
+  
+    .nav-list li a {
+        padding: 20px 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+  
+    .mobile-menu {
+        display: block;
+    }
+  
+    .nav-list.active {
+        transform: translateX(0%);
+    }
+  
+    @keyframes navLinkFade {
+        0% {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+  
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+  
+    .mobile-menu.active .line-1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+  
+    .mobile-menu.active .line-2 {
+        opacity: 0;
+    }
+  
+    .mobile-menu.active .line-3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+}
