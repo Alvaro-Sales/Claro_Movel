@@ -217,6 +217,18 @@ main {
     height: 90px;
 }
 
+footer {
+    max-width: 100%;
+    text-align: center;
+    background-color: var(--cor-1);
+}
+  
+footer p {
+    color: var(--cor-3);
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
 
 @media screen and (max-width: 930px) {
     body {
