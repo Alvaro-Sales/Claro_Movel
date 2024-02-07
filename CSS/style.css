@@ -106,6 +106,12 @@ main {
     overflow-x: hidden;
 }
 
+.titleSection {
+    text-align: center;
+    color: var(--cor-1);
+    margin-top: 20px;
+}
+
 .containerCards {
     max-width: 100%;
     max-height: 100%;
@@ -127,11 +133,6 @@ main {
     padding: 20px;
     border-radius: 20px;
     margin: 20px;
-}
-
-.card-1 {
-    width: 430px;
-    height: 683px;
 }
 
 #titleCard {
