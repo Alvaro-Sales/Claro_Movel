@@ -124,7 +124,7 @@ main {
 }
 
 .card {
-    width: 430px;
+    width: 500px;
     min-height: 900px;
     display: flex;
     align-items: start;
