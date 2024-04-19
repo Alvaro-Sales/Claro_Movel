@@ -10,11 +10,11 @@
 :root {
     --cor-1: #ffffff;
     --cor-2: #0080ff;
-    --cor-3: #222222;
+    --body: #f8f8f8;
     --cor-4: #00df5d;
     --cor-5: #000000;
     --cor-6: #17d365;
-    --cor-7: #EF3829;
+    --destaque: #EF3829;
 }
 
 html {
@@ -28,7 +28,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-	background-color: var(--cor-3);
+	background-color: var(--body);
 }
 
 header {
@@ -84,7 +84,7 @@ nav {
 }
 
 .nav-list li a:hover {
-    color: var(--cor-7);
+    color: var(--destaque);
 }
 
 .mobile-menu {
@@ -101,15 +101,18 @@ nav {
 }
 
 main {
-    padding-top: 8vh;
+    padding-top: 6vh;
     max-width: 100%;
     max-height: 100%;
     overflow-x: hidden;
 }
 
+.destaque {
+    color: var(--destaque);
+}
+
 .titleSection {
     text-align: center;
-    color: var(--cor-1);
     margin-top: 20px;
 }
 
@@ -123,100 +126,151 @@ main {
     flex-wrap: wrap;
 }
 
+
 .card {
-    width: 500px;
-    min-height: 900px;
     display: flex;
-    align-items: start;
     flex-direction: column;
-    justify-content: space-around;
-    background-color: #ebebeb;
+    justify-content: center;
+    width: 500px;
+    height: 650px;
     padding: 20px;
-    border-radius: 20px;
     margin: 20px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-#titleCard {
+.cardPos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 770px;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.fitaTopo {
+    top: -10px;
+    left: -10px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fitaTopo::before {
+    content: 'Mais Vendido';
+    width: 150%;
+    height: 40px;
+    position: absolute;
+    background-color: var(--destaque);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--cor-1);
+    letter-spacing: 1.5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fitaTopo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #b82214;
+    z-index: -1;
+    box-shadow: 140px -140px #b82214;
+}
+
+.card .titleCard {
     text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.cardPos .titleCard {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
     margin-bottom: 20px;
-    color: var(--cor-7);
-    font-size: 30px;
 }
 
 .appIlimi {
+    margin-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 10px;
 }
 
-.appIlimi .imgWhatsapp {
+.cardPos .appIlimi {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cardPos p {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.appIlimi img {
+    margin-left: 10px;
     width: 40px;
     height: 40px;
-    margin-left: 20px;
-}
-
-.card h2 {
-    margin-bottom: 10px;
+    border-radius: 50%;
 }
 
 .extraPlay {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0 20px 0;
 }
 
-.extraPlay2 {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.iconExtra {
+.extraPlay img {
+    margin-left: 10px;
     width: 40px;
     height: 40px;
-    margin-left: 10px;
     border-radius: 50%;
 }
 
-.importante {
-    color: var(--cor-7);
+.card .info {
+    margin-top: 30px;
 }
 
-.ilustra {
-    max-width: 100%;
-    height: auto;
+.cardPos .info {
+    margin-top: 30px;
 }
 
-.ilustra div {
+.info2 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.ilustra div img {
-    width: 500px;
-    height: auto;
-}
-
-.float {
-    z-index: 10;
-    bottom: 20px;
-    right: 40px;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-
-.float img {
-    width: 90px;
-    height: 90px;
+    justify-content: center;
 }
 
 footer {
