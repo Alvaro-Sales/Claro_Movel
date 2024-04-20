@@ -173,7 +173,7 @@ main {
     width: 150%;
     height: 40px;
     position: absolute;
-    background-color: var(--destaque);
+    background-color: #0080ff;
     transform: rotate(-45deg) translateY(-20px);
     display: flex;
     justify-content: center;
@@ -186,6 +186,48 @@ main {
 }
 
 .fitaTopo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0068cf;
+    z-index: -1;
+    box-shadow: 140px -140px #0068cf;
+}
+
+.fitaTopoExclusivo {
+    top: -10px;
+    left: -10px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fitaTopoExclusivo::before {
+    content: 'Exclusivo';
+    width: 150%;
+    height: 40px;
+    position: absolute;
+    background-color: var(--destaque);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--cor-1);
+    letter-spacing: 1.5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fitaTopoExclusivo::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -226,6 +268,19 @@ main {
     margin-bottom: 10px;
 }
 
+.card .infoCidades {
+    display: flex;
+    align-items: center;
+}
+
+.card .infoCidades .mao {
+    margin-left: 20px;
+}
+
+.card .infoCidades img {
+    margin-left: 10px;
+}
+
 .card p {
     font-weight: 600;
     font-size: 20px;
@@ -260,7 +315,7 @@ main {
 }
 
 .card .info {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .cardPos .info {
