@@ -132,7 +132,7 @@ main {
     flex-direction: column;
     justify-content: center;
     width: 500px;
-    height: 650px;
+    height: 700px;
     padding: 20px;
     margin: 20px;
     position: relative;
@@ -275,9 +275,11 @@ main {
 
 .card .infoCidades .mao {
     margin-left: 20px;
+    width: 50px;
+    height: 50px;
 }
 
-.card .infoCidades img {
+.card .infoCidades .iconInfo {
     margin-left: 10px;
 }
 
