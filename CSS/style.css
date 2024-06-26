@@ -246,6 +246,14 @@ main {
     letter-spacing: 1px;
 }
 
+.cardPos .titleCardExclusivo {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
 .cardPos .titleCard {
     text-align: center;
     font-size: 28px;
@@ -322,6 +330,10 @@ main {
 
 .cardPos .info {
     margin-top: 30px;
+}
+
+.cardPos #infoPos {
+    margin-top: 10px;
 }
 
 .info2 {
