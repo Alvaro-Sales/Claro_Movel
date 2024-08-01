@@ -44,3 +44,11 @@ const mobileNavbar = new MobileNavbar(
 );
 
 mobileNavbar.init();
+
+
+//Criando função para mudar de tema claro para escuro
+var icon = document.getElementById("icon")
+
+icon.onclick = function() {
+    document.body.classList.toggle("dark-theme")
+}

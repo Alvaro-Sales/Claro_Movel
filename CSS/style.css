@@ -9,12 +9,20 @@
 
 :root {
     --cor-1: #ffffff;
-    --cor-2: #0080ff;
+    --cor-2: #222222;
+    --blue: #0080ff;
     --body: #f8f8f8;
     --cor-4: #00df5d;
-    --cor-5: #000000;
     --cor-6: #17d365;
     --destaque: #EF3829;
+    --boxShadow: 0 0px 20px rgba(133, 133, 133, 0.15);
+    --boxShadowMenu: 2px 2px 10px rgba(206, 206, 206, 0.2);
+}
+
+.dark-theme {
+    --cor-1: #222222;
+    --cor-2: #ffffff;
+    --boxShadowMenu: 2px 2px 10px rgba(43, 43, 43, 0.3);
 }
 
 html {
@@ -28,7 +36,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-	background-color: var(--body);
+	background-color: var(--cor-1);
 }
 
 header {
@@ -47,57 +55,21 @@ nav {
     height: 6vh;
     min-height: 50px;
     font-family: 'Poppins', sans-serif;
+    box-shadow: var(--boxShadowMenu);
 }
 
 .logo {
-    color: var(--cor-5);
+    color: var(--cor-2);
     font-weight: normal;
     font-family: 'Marck Script', cursive;
     cursor: default;
 }
 
-#menu {
-    display: flex;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-list li {
-    letter-spacing: 3px;
-    margin-left: 10px;
-}
-
-.nav-list li a {
-    font-weight: normal;
-    padding: 8px;
-    font-weight: 600;
-    color: var(--cor-5);
-    transition: all 0.3s ease;
-    text-decoration: none;
-    scroll-behavior: smooth;
-}
-
-.nav-list li a:hover {
-    color: var(--destaque);
-}
-
-.mobile-menu {
-    display: none;
+#icon {
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-}
-
-.mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background-color: var(--cor-1);
-    margin: 8px;
-    transition: all .3s ease;
+    margin-left: 0;
 }
 
 main {
@@ -114,6 +86,7 @@ main {
 .titleSection {
     text-align: center;
     margin-top: 20px;
+    color: var(--cor-2);
 }
 
 .containerCards {
@@ -136,9 +109,9 @@ main {
     padding: 20px;
     margin: 20px;
     position: relative;
-    background-color: #ffffff;
+    background-color: var(--cor-1);
     border-radius: 20px;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--boxShadow);
 }
 
 .cardPos {
@@ -150,9 +123,9 @@ main {
     padding: 20px;
     margin: 20px;
     position: relative;
-    background-color: #ffffff;
+    background-color: var(--cor-1);
     border-radius: 20px;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--boxShadow);
 }
 
 .fitaTopo {
@@ -169,11 +142,11 @@ main {
 }
 
 .fitaTopo::before {
-    content: 'Mais Vendido';
+    content: 'Portabilidade';
     width: 150%;
     height: 40px;
     position: absolute;
-    background-color: #0080ff;
+    background-color: var(--blue);
     transform: rotate(-45deg) translateY(-20px);
     display: flex;
     justify-content: center;
@@ -244,6 +217,7 @@ main {
     font-size: 28px;
     font-weight: 600;
     letter-spacing: 1px;
+    color: var(--cor-2);
 }
 
 .cardPos .titleCardExclusivo {
@@ -252,6 +226,16 @@ main {
     font-weight: 600;
     letter-spacing: 1px;
     margin-top: 20px;
+    color: var(--cor-2);
+}
+
+.cardPos .titleCardPortabilidade {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    color: var(--cor-2);
 }
 
 .cardPos .titleCard {
@@ -260,6 +244,7 @@ main {
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 20px;
+    color: var(--cor-2);
 }
 
 .appIlimi {
@@ -281,12 +266,6 @@ main {
     align-items: center;
 }
 
-.card .infoCidades .mao {
-    margin-left: 20px;
-    width: 50px;
-    height: 50px;
-}
-
 .card .infoCidades .iconInfo {
     margin-left: 10px;
 }
@@ -295,12 +274,14 @@ main {
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 10px;
+    color: var(--cor-2);
 }
 
 .cardPos p {
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 10px;
+    color: var(--cor-2);
 }
 
 .appIlimi img {
@@ -346,147 +327,13 @@ footer {
     max-width: 100%;
     text-align: center;
     background-color: var(--cor-1);
+    box-shadow: var(--boxShadow);
 }
   
 footer p {
     color: var(--cor-3);
     padding: 5px 10px;
     font-size: 16px;
+    color: var(--cor-2);
 }
 
-
-@media screen and (max-width: 930px) {
-    body {
-        overflow-x: hidden;
-        padding: 0;
-        margin: 0;
-    }
-  
-    header {
-        width: 100%;
-        z-index: 99;
-        position: fixed;
-    }
-    
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-sizing: border-box;
-        padding: 0 30px;
-        height: 6vh;
-        min-height: 50px;
-    }
-    
-    nav a {
-        color: var(--cor-5);
-        text-decoration: none;
-        transition: all 0.3s ease;
-    }
-    
-    nav a:hover {
-        color: var(--cor-2);
-    }
-    
-    .nav-list {
-        list-style: none;
-        display: flex;
-        align-items: center;
-    }
-    
-    .nav-list li {
-        letter-spacing: 2px;
-        margin-left: 10px;
-    }
-    
-    .mobile-menu {
-        display: none;
-        cursor: pointer;
-    }
-    
-    .mobile-menu div {
-        width: 32px;
-        height: 2px;
-        background-color: var(--cor-5);
-        margin: 8px;
-        transition: all 0.3s ease;
-    }
-}
-
-
-@media screen and (max-width: 850px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: var(--cor-1);
-        box-sizing: border-box;
-        padding: 0 50px;
-        height: 6vh;
-        min-height: 50px;
-        font-family: 'Poppins', sans-serif;
-    }
-  
-    .nav-list {
-        position: absolute;
-        top: 6vh;
-        right: 0;
-        width: 70%;
-        height: 94vh;
-        background-color: var(--cor-1);
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        box-sizing: border-box;
-        padding: 80px 0 50% 0;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
-  
-    .nav-list li {
-        max-height: 50%;
-        margin-left: 0;
-        opacity: 0;
-    }
-  
-    .nav-list li a {
-        padding: 20px 10px;
-        font-family: 'Poppins', sans-serif;
-    }
-  
-    .mobile-menu {
-        display: block;
-    }
-  
-    .nav-list.active {
-        transform: translateX(0%);
-    }
-  
-    @keyframes navLinkFade {
-        0% {
-            opacity: 0;
-            transform: translateX(-50px);
-        }
-  
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-  
-    .mobile-menu.active .line-1 {
-        transform: rotate(-45deg) translate(-8px, 8px);
-    }
-  
-    .mobile-menu.active .line-2 {
-        opacity: 0;
-    }
-  
-    .mobile-menu.active .line-3 {
-        transform: rotate(45deg) translate(-5px, -7px);
-    }
-}
