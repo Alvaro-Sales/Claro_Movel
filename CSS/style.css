@@ -83,6 +83,14 @@ main {
     color: var(--destaque);
 }
 
+.linkAtualizado {
+    text-align: center;
+}
+
+.aviso {
+    text-align: center;
+}
+
 .titleSection {
     text-align: center;
     margin-top: 20px;
