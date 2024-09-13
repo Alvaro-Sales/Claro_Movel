@@ -87,8 +87,9 @@ main {
     text-align: center;
 }
 
-.aviso {
+.avisoLink {
     text-align: center;
+    color: red;
 }
 
 .titleSection {
